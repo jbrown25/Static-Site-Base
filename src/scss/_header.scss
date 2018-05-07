@@ -1,0 +1,20 @@
+.main_header {
+	background: linear-gradient(135deg, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%);
+	padding: 20px 0;
+
+	.heading_container {
+		width: 78%;
+		max-width: 1170px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	h1 {
+		color: #fff;
+	}
+
+	em {
+		color: #fff;
+		font-weight: 300;
+	}
+}
