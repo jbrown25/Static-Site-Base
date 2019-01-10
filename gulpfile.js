@@ -9,7 +9,7 @@ const browserSync = require('browser-sync');
 gulp.task('browser-sync', () => {
   browserSync({
     server: {
-       baseDir: "./"
+       baseDir: "./public/"
     }
   });
 });
@@ -28,7 +28,7 @@ gulp.task('styles', () => {
     }}))
     .pipe(sass())
     .pipe(autoprefixer('last 10 versions'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({stream:true}))
 });
 
@@ -42,7 +42,7 @@ gulp.task('scripts', () => {
     .pipe(babel({
       presets: ['env']
     }))
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('public/js/'))
     .pipe(browserSync.reload({stream:true}))
 });
 
